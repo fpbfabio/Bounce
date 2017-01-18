@@ -15,7 +15,7 @@ public class SpawnFloor : MonoBehaviour {
         FloorMovement script = floor.GetComponent<FloorMovement>();
         script.enabled = false;
         Rigidbody rigidbody = floor.GetComponent<Rigidbody>();
-        rigidbody.velocity = Vector3.back * 10;
+        rigidbody.velocity = Vector3.back * 3;
     }
 
     void OnTriggerEnter(Collider other)
