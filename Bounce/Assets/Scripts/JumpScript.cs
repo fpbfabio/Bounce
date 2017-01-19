@@ -19,19 +19,10 @@ public class JumpScript : MonoBehaviour {
         if (jump)
         {
             rigidbody.AddForce(Vector3.up * jumpForce);
-            Debug.Log("Jump");
         }
     }
-
-    // Update is called once per frame
-    void Update () {
-        if (Input.GetMouseButtonDown(0) && !jump)
-        {
-            StartJump();
-        }
-    }
-
-    private void StartJump()
+    
+    public void StartJump()
     {
         jump = true;
         Invoke("StopJump", 1);
