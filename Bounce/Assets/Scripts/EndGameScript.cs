@@ -18,6 +18,7 @@ public class EndGameScript : MonoBehaviour {
     {
         if (col.gameObject.CompareTag("Enemy"))
         {
+            Time.timeScale = 1;
             PlayerPrefs.SetString("Score", score.text);
             SceneManager.LoadScene(2);
         }
