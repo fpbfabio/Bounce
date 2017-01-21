@@ -13,7 +13,7 @@ public class RewardScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void OnCollisionEnter (Collision col) {
+	void OnTriggerEnter (Collider col) {
 		if (col.gameObject.CompareTag("Player"))
         {
             Time.timeScale += timeScaleInc;

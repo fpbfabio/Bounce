@@ -24,6 +24,8 @@ public class JumpScript : MonoBehaviour {
     
     public void StartJump()
     {
+        if (transform.position.y > 0.3f)
+            return;
         jump = true;
         Invoke("StopJump", 1);
     }
