@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Script to spawn game objects periodically.
 /// </summary>
-public class SpawnEnemy : MonoBehaviour {
+public class SpawnPrefab : MonoBehaviour {
     public int startTime;
     public int interval;
     public GameObject prefab;
