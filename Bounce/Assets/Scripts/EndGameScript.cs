@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/// <summary>
+/// Script to save score and load game over scene.
+/// </summary>
 public class EndGameScript : MonoBehaviour {
     private Text score;
 

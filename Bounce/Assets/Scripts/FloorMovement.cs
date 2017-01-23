@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This script controls the floor movement, including its speed.
+/// </summary>
 public class FloorMovement : MonoBehaviour {
     private Rigidbody rigidbody;
     public int speed;

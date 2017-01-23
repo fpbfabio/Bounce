@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Script to increment score when the player hits a capsule.
+/// </summary>
 public class RewardScript : MonoBehaviour {
     private Text score;
     public float timeScaleInc;

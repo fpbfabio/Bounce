@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Script to spawn game objects periodically.
+/// </summary>
 public class SpawnEnemy : MonoBehaviour {
     public int startTime;
     public int interval;

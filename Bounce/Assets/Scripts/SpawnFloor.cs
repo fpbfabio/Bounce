@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Script to generate the floor periodically.
+/// </summary>
 public class SpawnFloor : MonoBehaviour {
     public GameObject prefab;
     public float x;

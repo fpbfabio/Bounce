@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Script to control the jump of the ball.
+/// </summary>
 public class JumpScript : MonoBehaviour {
     private Rigidbody rigidbody;
     private bool jump;

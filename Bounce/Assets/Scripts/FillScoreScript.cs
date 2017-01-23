@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Script to fill score in game over scene.
+/// </summary>
 public class FillScoreScript : MonoBehaviour {
 
 	// Use this for initialization

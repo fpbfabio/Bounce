@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Script to control the movement of the ball to right and left.
+/// </summary>
 public class LateralMovementScript : MonoBehaviour {
     public int speed;
     public Vector3 p1;
