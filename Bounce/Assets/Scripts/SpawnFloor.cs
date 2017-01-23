@@ -8,7 +8,7 @@ public class SpawnFloor : MonoBehaviour {
     public float y;
     public float z;
 
-    private void generateFloor()
+    private void GenerateFloor()
     {
         GameObject floor = GameObject.Instantiate(prefab);
         floor.transform.position = new Vector3(x, y, z);
@@ -25,7 +25,7 @@ public class SpawnFloor : MonoBehaviour {
             GameObject floor = other.gameObject;
             FloorMovement script = floor.GetComponent<FloorMovement>();
             script.enabled = true;
-            generateFloor();
+            GenerateFloor();
         }
     }
 }

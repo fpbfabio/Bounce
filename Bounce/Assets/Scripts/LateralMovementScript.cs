@@ -88,26 +88,26 @@ public class LateralMovementScript : MonoBehaviour {
         {
             if (transform.position.x < p1.x)
             {
-                stop();
+                Stop();
             }
         }
         else if (stopP2)
         {
             if (Mathf.Abs(transform.position.x - p2.x) < 0.2)
             {
-                stop();
+                Stop();
             }
         }
         else if (stopP3)
         {
             if (transform.position.x > p3.x)
             {
-                stop();
+                Stop();
             }
         }
 	}
 
-    private void stop()
+    private void Stop()
     {
         rigidbody.velocity = new Vector3(0, rigidbody.velocity.y, rigidbody.velocity.z);
         stopP1 = false;

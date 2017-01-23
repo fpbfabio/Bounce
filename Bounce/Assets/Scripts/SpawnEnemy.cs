@@ -7,7 +7,7 @@ public class SpawnEnemy : MonoBehaviour {
     public int interval;
     public GameObject prefab;
 
-    private void generate()
+    private void Generate()
     {
         GameObject enemy = GameObject.Instantiate(prefab);
         int randomChild = (int) Mathf.Floor(Random.Range(0, transform.childCount - 0.000001f));
@@ -17,6 +17,6 @@ public class SpawnEnemy : MonoBehaviour {
     // Update is called once per frame
     void Start ()
     {
-        InvokeRepeating("generate", startTime, interval);
+        InvokeRepeating("Generate", startTime, interval);
     }
 }
